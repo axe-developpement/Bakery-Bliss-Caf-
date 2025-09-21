@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.block-head{
+    display: flex !important;
+    align-items: end !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.header-columns{
+    height: 340px !important;
+}
+
+.header-columns-start{
+    display: flex !important;
+    justify-content: left !important;
+    align-items:end !important;
+    width: 30% !important;
+    height: 100% !important;
+}
+.header-columns-middle{
+    justify-content: center !important;
+    width: 40% !important;
+}
+
+.header-columns-end{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    height: 100% !important;
+    /* padding-left: 50px !important; */
+}
+
+.bbc-title{
+    width: 300px !important;
+    font-family: 'Aclonica';
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    margin: auto auto !important;
+}
+
+.gourmand-title{
+    font-family: 'Josefin';
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+}
+
+.header-p{
+    font-family: 'Josefin';
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    padding: 0 7px 0 7px !important;
+}
+
+.header-block-logo h4{
+    font-family: 'Josefin';
+    font-size: 32px !important;
+    font-weight: 700 !important; 
+}
+.header-block-logo{
+    width: 300px !important;
+    margin:0 0 110px 100px !important;
+}
+
+
+.header-100p{
+    /* width: 105px !important; */
+    text-align: center !important;
+    margin-bottom: 0 !important;
+}
+
+[data-column=start]{
+	width: 175px !important;
+    justify-content: flex-end !important;
+}
+
+[data-column=middle]{
+	/* margin-left:100px; */
+    
+}
+
+[data-column=end]{
+	background-image:url("http://bakerybliss.local/wp-content/uploads/2025/09/pailles-deco.png");
+	position:absolute;
+	right:5%;
+	top:2%;
+	width:150px !important;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.block-announcement-product{
+    position: relative;
+    padding: 1px 0 !important;
+}
+.block-announcement{
+    position: relative;
+    height: 576px !important;
+    margin: 0 !important;
+     background-image: url('../../../uploads/2025/09/papier-paint-moment.png');
+    background-repeat: repeat;
+}
+
+.block-announcement-container{
+    position: relative;
+    margin-top: 30px !important;
+}
+
+.thumbnail-title{
+    position:  absolute;
+    font-family: 'Aclonica';
+    font-size: 20px !important;
+    font-weight: 50;
+    width: 100% !important;
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    /* margin: auto auto auto auto !important; */
+    text-align: center !important;
+    top: 12px !important;
+    /* left: 95px !important; */
+    white-space: wrap !important;
+    bottom: auto !important;
+    color: #fff !important;
+    line-height: 1.1em !important;
+    /* height: 30% !important; */
+}
+
+.donut-title{
+    top:25px !important;
+}
+
+.menu-announcement-title{
+    font-family: 'Aclonica';
+    font-size: 28px !important;
+    padding-top: 30px !important;
+    background-image: url('../../../uploads/2025/09/line-title-red.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 80px !important;
+}
+
+.announcement-link-menu{
+    font-family: 'Josefin';
+    font-weight: 500 !important;
+    font-style: italic !important;
+    font-size: 28px !important;
+}
+
+.block-concept{
+    height: 576px !important;
+    background-color: grey !important;
+    background-image: url('../../../uploads/2025/09/franges-relief-jaunes.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #252220 !important;
+    
+}
+
+.block-footer{
+    height: 576px !important;
+    background-color: #252220 !important;
+}
+
+#footer{
+    height: 600px !important;
+    background-color: #252220 !important;    
+}
+
+#block-10 h2{
+    font-family: 'Aclonica';
+    font-size: 4.395vw !important;
+    font-weight: 400 !important;
+    color: #FECA61;
+    width: 410px !important ;
+    line-height: 1em;
+}
+
+[data-column=widget-area-1]{
+	display: flex;
+    align-items: end !important;   
+}
+
+
+
+[data-column=ghost]{
+    width: 50% !important; 
+}
+
+[data-column=widget-area-3]{
+	display: flex;
+    align-items: center !important;  
+    justify-content: center !important;
+    width: 350px !important; 
+    text-align: center;
+}
+
+[data-column=widget-area-4]{
+    /* align-items: center !important;   */
+    justify-content: start !important;
+}
+
+[data-column=widget-area-4]{
+    width: 189.5px !important; 
+}
+
+#block-12 p, #block-14 p{
+    font-family: 'Joselin';
+    font-size: 3.711vw !important;
+    font-weight: 500 !important;
+    width: 100% !important ;
+}
