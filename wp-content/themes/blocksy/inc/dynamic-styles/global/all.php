@@ -300,7 +300,7 @@ blocksy_output_spacing([
 $max_site_width = blocksy_get_theme_mod( 'maxSiteWidth', 1290 );
 $css->put(
 	':root',
-	'--theme-normal-container-max-width: ' . 3500 . 'px'
+	'--theme-normal-container-max-width: ' . 5000 . 'px'
 );
 
 blocksy_output_responsive([

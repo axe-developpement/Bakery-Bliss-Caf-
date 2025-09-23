@@ -7,7 +7,7 @@ if (! isset($selector)) {
 $max_site_width = blocksy_get_theme_mod('maxSiteWidth', 1290);
 $css->put(
 	':root',
-	'--theme-normal-container-max-width: ' . 3500 . 'px'
+	'--theme-normal-container-max-width: ' . 5000 . 'px'
 );
 
 $narrowContainerWidth = blocksy_get_theme_mod('narrowContainerWidth', 750);
@@ -182,7 +182,7 @@ if ($post_id) {
 		$css->put(
 			':root',
 			// '--theme-block-max-width: ' . $template_editor_width . 'px !important'
-			'--theme-block-max-width: ' . 3500 . 'px !important'
+			'--theme-block-max-width: ' . 5000 . 'px !important'
 		);
 	}
 }

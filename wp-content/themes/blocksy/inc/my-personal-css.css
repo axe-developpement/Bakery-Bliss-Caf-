@@ -1,11 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+
+/**************************************** ZONE HEADER ********************************************************/
+
+#header{
+    width: 100% !important;
+}
 .block-head{
     display: flex !important;
     align-items: end !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    margin: 0 !important;
 }
 
 .header-columns{
@@ -41,21 +48,21 @@
 }
 
 .gourmand-title{
-    font-family: 'Josefin';
+    font-family: 'Josefin sans';
     font-size: 28px !important;
     font-weight: 700 !important;
     margin-top: 20px !important;
 }
 
 .header-p{
-    font-family: 'Josefin';
+    font-family: 'Josefin sans';
     font-size: 20px !important;
     font-weight: 400 !important;
     padding: 0 7px 0 7px !important;
 }
 
 .header-block-logo h4{
-    font-family: 'Josefin';
+    font-family: 'Josefin sans';
     font-size: 32px !important;
     font-weight: 700 !important; 
 }
@@ -70,6 +77,8 @@
     text-align: center !important;
     margin-bottom: 0 !important;
 }
+
+/************************************************* END BLOCK HEADER *************************************************/
 
 [data-column=start]{
 	width: 175px !important;
@@ -142,44 +151,131 @@
 }
 
 .announcement-link-menu{
-    font-family: 'Josefin';
+    font-family: 'Josefin sans';
     font-weight: 500 !important;
     font-style: italic !important;
     font-size: 28px !important;
 }
 
+/***** ZONE CONCEPT *********/ 
 .block-concept{
     height: 576px !important;
     background-color: grey !important;
-    background-image: url('../../../uploads/2025/09/franges-relief-jaunes.png');
+    background-image: url('../../../uploads/2025/09/franges-relief-jaunes.webp');
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center -1px;
     background-color: #252220 !important;
     
 }
+/*** Couronne ****/
+.wp-image-275 {
+    width: 28px !important;
+    height: 13px !important;
+}
+
+.block-notre-concept{
+    display: grid;
+    min-height: 100% !important;
+    padding-top: 150px !important;
+    padding-left: 40px !important;
+}
+
+.title-notre-concept{
+    background-image: url('../../../uploads/2025/09/couronne-NY.svg');
+    background-repeat: no-repeat;
+    background-position: left 5px;
+    background-size: 57px 27px;
+    color: #FECA61;
+    font-family: 'Aclonica';
+    font-size: clamp(20px,2.734vw, 28px)  !important;
+    font-weight: 400;
+    /* margin-top: 10px !important; */
+    margin: 0 !important;
+    height: 100% !important;
+    vertical-align: bottom !important;
+    padding-top: 5% !important;
+    padding-right: 50px !important;
+    width: 260px !important;
+}
+
+.p-notre-concept{
+    font-family: 'Josefin sans';
+    font-size: clamp(10px,1.953vw, 20px)  !important;
+    font-weight: 400;   
+    color: #fff;
+    width: 252px !important;
+    line-height: 1.1em;;
+}
+
+.p-notre-concept::first-letter{
+    font-size:clamp(20px,2.734vw, 28px)  !important ;
+}
+
+/****** IMAGE INTERIEUR COFFEE SHOP ACCUEIL ******/ 
+
+.img-bbc-concept-inside {
+    margin-top: 160px !important;
+    margin-left: 70px !important;
+}
+
+/**** FIN ZONE CONCEPT ********/
 
 .block-footer{
     height: 576px !important;
     background-color: #252220 !important;
 }
 
+/*************************************** ZONE FOOTER ***********************************************************/
+
 #footer{
-    height: 600px !important;
-    background-color: #252220 !important;    
+    min-height: 200px !important;
+    background-color: #252220 !important;   
+    width: 100% !important; 
+    padding-bottom: 15px !important;
+}
+#footer [class*=ct-container]{
+    margin: 0 !important;
+}
+.ct-footer [data-row]>div{
+    grid-column-gap: 0 !important;
+    --grid-template-columns: 25% 50% 25% !important;
+    width: 100% !important;
+}
+.ct-footer [data-row=top]:first-child{
+    /* height: 400px !important; */
+    width: 100% !important;
 }
 
-#block-10 h2{
-    font-family: 'Aclonica';
-    font-size: 4.395vw !important;
-    font-weight: 400 !important;
-    color: #FECA61;
-    width: 410px !important ;
-    line-height: 1em;
-}
+    /*********** Les 2 logos **********/
+    .wp-image-236{
+        width: clamp(68px, 11.914vw, 122px) !important;
+        position: relative;
+        right: -75% !important;
+        top: 20px !important;
+    }
+
+    .wp-image-243{
+        width: clamp(90px, 21.094vw, 216px) !important;
+    }
+
+    /******** END LOGOS ********/
+
+    /******* ZONE TITRE ******/
+   
+    #block-10 h2{
+        font-family: 'Aclonica';
+        font-size: clamp(20px, 4.395vw, 45px) !important;
+        font-weight: 400 !important;
+        color: #FECA61;
+        width: 410px !important ;
+        line-height: 1em;
+    }
+
+    /****** END TITRE *******/
 
 [data-column=widget-area-1]{
-	display: flex;
-    align-items: end !important;   
+    align-items: end !important; 
+    justify-content: start !important;
 }
 
 
@@ -198,16 +294,96 @@
 
 [data-column=widget-area-4]{
     /* align-items: center !important;   */
-    justify-content: start !important;
+    justify-content: center !important;
 }
 
 [data-column=widget-area-4]{
     width: 189.5px !important; 
 }
 
-#block-12 p, #block-14 p{
-    font-family: 'Joselin';
-    font-size: 3.711vw !important;
+.ct-footer [data-row=middle]>div{
+    display: grid;
+    /* grid-template-columns: 1 !important; 
+    grid-column-start: 2;*/
+}
+
+[data-column=widget-area-5]{
+    width: 100% !important; 
+    margin: auto auto !important;
+    grid-column-start: 2;
+    margin-top: 20px !important;
+}
+
+[data-column=widget-area-6]{
+    width: 100% !important; 
+    margin: auto auto !important;
+    grid-column-start: 2;
+    
+}
+
+/******** Mentions légales ********/
+#block-26 {
+    margin-top: 10px !important;
+}
+#block-26 p {
+    font-size: clamp(8px,1.953vw,20px) !important;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Josefin sans';
+}
+
+#block-17 p, #block-18 p{
+    font-family: 'Josefin sans';
+    font-size: clamp(15px, 3.711vw, 38px) !important;
     font-weight: 500 !important;
     width: 100% !important ;
+    color: #fff;
+    line-height: 1.1em !important;
 }
+
+.footer-rs img{
+    width: clamp(20px, 3.906vw, 40px) !important;
+    height: clamp(20px, 3.906vw, 40px) !important;
+}
+
+/*************** VERSION MOBILE ********************/
+
+@media screen and (max-width:767px) {
+
+    /*********** Les 2 logos **********/
+    .wp-image-236{
+        right: -30% !important;
+    }
+
+    .wp-image-243{
+        width: clamp(90px, 21.094vw, 216px) !important;
+    }
+    /******** ZONE FOOTER ********/
+    #footer{
+        min-height: 200px !important;
+    }
+    .ct-footer [data-row=top]:first-child{
+    /* height: 300px !important; */
+}
+}
+
+/*************** Version tablette ***************/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    /******** ZONE FOOTER ********/
+    #footer{
+        min-height: 200px !important;
+    }
+
+        /*********** Les 2 logos **********/
+    .wp-image-236{
+        right: -20% !important;
+    }
+
+    .wp-image-243{
+        width: clamp(90px, 21.094vw, 216px) !important;
+    }
+}
+
+/*************************************************** END FOOTER ****************************************************/
